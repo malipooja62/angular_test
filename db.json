@@ -5,12 +5,6 @@
       "name": "abc",
       "description": "xyz",
       "price": "200"
-    },
-    {
-      "id": 2,
-      "name": "abcd",
-      "description": "pqr",
-      "price": "1000"
     }
   ],
   "comments": [],

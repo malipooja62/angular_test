@@ -7,7 +7,6 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './shared/app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployDashboardComponent } from './employ-dashboard/employ-dashboard.component';
-import { AuthService } from './shared/auth.service';
 //import { SearchFilterPipe } from './search-filter.pipe';
 
 @NgModule({
@@ -23,7 +22,7 @@ import { AuthService } from './shared/auth.service';
     Ng2SearchPipeModule,
     FormsModule
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

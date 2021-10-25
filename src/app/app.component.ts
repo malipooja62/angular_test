@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from './shared/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,7 @@ import { AuthService } from './shared/auth.service';
 export class AppComponent {
   title = 'AngularCrud';
 
-  constructor(private auth: AuthService)
+  constructor()
   {
     
   }

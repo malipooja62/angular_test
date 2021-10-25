@@ -15,11 +15,6 @@ export class EmployDashboardComponent implements OnInit {
   formData !: any;
   submitted = false;
   filterTerm !: any;
-  // arrayItems !: {
-  //   id: any;
-  //   title: any;
-  // }[];
-  // tableHeader !: [];
   
   items !: FormArray;
   
@@ -28,8 +23,6 @@ export class EmployDashboardComponent implements OnInit {
       demoArray : this.formbuilder.array([])
    });
   }
-
-  
 
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
@@ -42,41 +35,6 @@ export class EmployDashboardComponent implements OnInit {
   }
 
   get f() { return this.formValue.controls; }
-
-  // createItem(): FormGroup {
-  //   return this.formbuilder.group({
-  //     name: '',
-  //     descriptionriptionription: '',
-  //     price: ''
-  //   });
-  // }
-
-  // addItem(): void {
-  //   this.items = this.formValue.get('items') as FormArray;
-  //   this.items.push(this.createItem());
-  // }
-
-
-//   createItem(): FormGroup {
-//     return this.formbuilder.group({
-//       name: '',
-//       descriptionriptionription: '',
-//       price: ''
-//     });
-//   }
-
-//   get() {
-//     return this.formValue.get('demoArray') as FormArray;
-//  }
- 
-//  addItem(): void {
-//   this.items = this.formValue.get('items') as FormArray;
-//   this.items.push(this.createItem());
-// }
-//  removeItem() {
-//     this.arrayItems.pop();
-//     this.demoArray.removeAt(this.demoArray.length - 1);
-//  }
 
     postDetails()
     {
@@ -103,7 +61,7 @@ export class EmployDashboardComponent implements OnInit {
         return true; 
       },
       err => {
-        alert("Data not added");
+        alert("'ERROR!! - Data not added");
       })
       }
       }
